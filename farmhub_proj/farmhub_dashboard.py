@@ -78,8 +78,22 @@ section[data-testid="stSidebar"] [data-baseweb="radio"] [aria-checked="true"] > 
 .stMultiSelect > div { overflow: visible !important; background-color: #ffffff !important; }
 .stMultiSelect > div > div { overflow: visible !important; background-color: #ffffff !important; }
 [data-baseweb="select"] { overflow: visible !important; }
-[data-baseweb="select"] > div { background-color: #ffffff !important; color: #333333 !important; overflow: visible !important; }
-[data-baseweb="select"] > div > div { background-color: #ffffff !important; overflow: visible !important; padding-left: 8px !important; flex-wrap: wrap !important; }
+[data-baseweb="select"] > div {
+    background-color: #ffffff !important;
+    color: #333333 !important;
+    overflow: visible !important;
+    padding-left: 6px !important;
+}
+[data-baseweb="select"] > div > div {
+    background-color: #ffffff !important;
+    overflow: visible !important;
+    padding-left: 6px !important;
+    flex-wrap: wrap !important;
+}
+[data-baseweb="select"] > div > div > div {
+    padding-left: 2px !important;
+    overflow: visible !important;
+}
 [data-baseweb="select"] input { background-color: #ffffff !important; color: #333333 !important; }
 [data-baseweb="popover"] { background-color: #ffffff !important; }
 [data-baseweb="menu"] { background-color: #ffffff !important; }
@@ -91,9 +105,7 @@ section[data-testid="stSidebar"] [data-baseweb="radio"] [aria-checked="true"] > 
     background-color: rgba(34,181,69,0.18) !important;
     border: 1px solid #22b545 !important;
     border-radius: 6px !important;
-    margin-left: 4px !important;
-    margin-top: 3px !important;
-    margin-bottom: 3px !important;
+    margin: 3px 2px !important;
 }
 [data-baseweb="tag"] span { color: #1a5c2a !important; font-weight: 500 !important; }
 [data-baseweb="tag"] [role="button"] svg { fill: #2d7a3a !important; }
