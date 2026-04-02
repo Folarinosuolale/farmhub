@@ -91,6 +91,9 @@ section[data-testid="stSidebar"] [data-baseweb="radio"] [aria-checked="true"] > 
     background-color: rgba(34,181,69,0.18) !important;
     border: 1px solid #22b545 !important;
     border-radius: 6px !important;
+    margin-left: 4px !important;
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
 }
 [data-baseweb="tag"] span { color: #1a5c2a !important; font-weight: 500 !important; }
 [data-baseweb="tag"] [role="button"] svg { fill: #2d7a3a !important; }
@@ -235,7 +238,7 @@ hr { border-color: #e8f5e9 !important; }
 
 # ── DATA LOADERS ────────────────────────────────────────────────────────────────
 
-@st.cache_data
+@st.cache_data(ttl=0)
 def load_expenses():
     wb = openpyxl.load_workbook(DATA_PATH)
     ws = wb["EXPENSES"]
@@ -275,7 +278,7 @@ def load_expenses():
     return df
 
 
-@st.cache_data
+@st.cache_data(ttl=0)
 def load_fish():
     wb = openpyxl.load_workbook(DATA_PATH)
     ws = wb["FISH RECORDS"]
@@ -339,7 +342,7 @@ def load_fish():
     return smoked_df, fingerlings_df
 
 
-@st.cache_data
+@st.cache_data(ttl=0)
 def load_pigs():
     wb = openpyxl.load_workbook(DATA_PATH)
     ws = wb["PIG RECORDS"]
@@ -526,7 +529,7 @@ def load_pigs():
     return pd.DataFrame(inventory), profiles_df, events_df
 
 
-@st.cache_data
+@st.cache_data(ttl=0)
 def load_sales():
     wb = openpyxl.load_workbook(DATA_PATH)
     ws = wb["SALES"]
