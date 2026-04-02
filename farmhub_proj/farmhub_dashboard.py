@@ -87,11 +87,13 @@ section[data-testid="stSidebar"] [data-baseweb="radio"] [aria-checked="true"] > 
 [data-baseweb="select"] > div > div {
     background-color: #ffffff !important;
     overflow: visible !important;
-    padding-left: 28px !important;
+    padding-left: 6px !important;
     flex-wrap: wrap !important;
 }
 [data-baseweb="select"] > div > div > div {
-    padding-left: 2px !important;
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
     overflow: visible !important;
 }
 [data-baseweb="select"] input { background-color: #ffffff !important; color: #333333 !important; }
