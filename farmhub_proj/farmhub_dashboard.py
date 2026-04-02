@@ -87,7 +87,7 @@ section[data-testid="stSidebar"] [data-baseweb="radio"] [aria-checked="true"] > 
 [data-baseweb="select"] > div > div {
     background-color: #ffffff !important;
     overflow: visible !important;
-    padding-left: 6px !important;
+    padding-left: 28px !important;
     flex-wrap: wrap !important;
 }
 [data-baseweb="select"] > div > div > div {
